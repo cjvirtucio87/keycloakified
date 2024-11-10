@@ -15,7 +15,7 @@ li.pf-v5-c-nav__item > a.pf-v5-c-nav__link:hover {
 }
 
 li.pf-v5-c-nav__item > a.pf-v5-c-nav__link.pf-m-current {
-  background-color: #8b6556;
+  background-color: pink;
 }
 
 li.pf-v5-c-nav__item > a.pf-v5-c-nav__link.pf-m-current:hover {
