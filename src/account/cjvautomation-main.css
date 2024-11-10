@@ -60,3 +60,7 @@ div.pf-v5-c-toolbar__item > button.pf-v5-c-menu-toggle {
   --pf-v5-c-menu-toggle--before--BorderRightColor: #8b6556;
   --pf-v5-c-menu-toggle--before--BorderBottomColor: #8b6556;
 }
+
+div.pf-v5-c-form__actions > button#save-btn {
+  background-color: #8b6556;
+}
