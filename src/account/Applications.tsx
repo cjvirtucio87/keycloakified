@@ -6,12 +6,9 @@ import {
 import {
   Button,
   DataList,
-  DataListCell,
   DataListContent,
   DataListItem,
-  DataListItemCells,
   DataListItemRow,
-  DataListToggle,
   DescriptionList,
   DescriptionListDescription,
   DescriptionListGroup,
@@ -54,14 +51,6 @@ export const Applications = () => {
     (clients) => setApplications(clients.map((c) => ({ ...c, open: false }))),
     [key],
   );
-
-  const toggleOpen = (clientId: string) => {
-    setApplications([
-      ...applications!.map((a) =>
-        a.clientId === clientId ? { ...a, open: !a.open } : a,
-      ),
-    ]);
-  };
 
   const removeConsent = async (id: string) => {
     try {

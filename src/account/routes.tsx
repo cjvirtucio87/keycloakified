@@ -6,11 +6,6 @@ import { RouteObject, PersonalInfoRoute, DeviceActivityRoute, LinkedAccountsRout
 import { Applications } from './Applications'
 
 
-export const ApplicationsRoute: RouteObject = {
-  path: "applications",
-  element: <Applications />,
-};
-
 export const RootRoute: RouteObject = {
   path: decodeURIComponent(new URL(environment.baseUrl).pathname),
   element: <Root />,
@@ -23,7 +18,6 @@ export const RootRoute: RouteObject = {
     ApplicationsRoute,
     GroupsRoute,
     OrganizationsRoute,
-    PersonalInfoRoute,
     ResourcesRoute,
     ContentRoute,
     Oid4VciRoute,
