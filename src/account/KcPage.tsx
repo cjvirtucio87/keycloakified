@@ -3,7 +3,7 @@ import { KcAccountUiLoader } from "@keycloakify/keycloak-account-ui";
 import type { KcContext } from "./KcContext";
 import "./cjvautomation-main.css";
 
-const KcAccountUi = lazy(() => import("@keycloakify/keycloak-account-ui/KcAccountUi"));
+const KcAccountUi = lazy(() => import("./KcAccountUi"));
 
 export default function KcPage(props: { kcContext: KcContext }) {
     const { kcContext } = props;
