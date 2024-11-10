@@ -2,13 +2,19 @@ body.kcBodyClass {
     background: url(./assets/background.jpg);
 }
 
+:root {
+  --pf-global--link--Color: #8b6556;
+  --pf-global--primary-color--100: #8b6556;
+  --pf-global--primary-color--200: #8b6556;
+}
+
 div.kc-logo-text {
     background-image: none;
 }
 
 h1#kc-page-title > div {
-    background-color: #8b6556;
     color: white;
+    background-color: var(--pf-global--primary-color--100);
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1), inset 0 0 10px rgba(0, 0, 0, 0.05);
@@ -17,14 +23,13 @@ h1#kc-page-title > div {
 div.kcFormCardClass.card-pf {
     background-color: rgba(255, 255, 255, 0.85);
     border-top: 10px solid;
-    border-color: #8b6556;
+    border-color: var(--pf-global--primary-color--100);
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1), inset 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
 input#kc-login {
     color: white;
-    background-color: #8b6556;
     border-radius: 5px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1), inset 0 0 10px rgba(0, 0, 0, 0.05);
 }
