@@ -5,7 +5,7 @@ import "@patternfly/patternfly/patternfly-addons.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import { initI18n } from "@keycloakify/keycloak-account-ui/i18n";
-import { routes } from "@keycloakify/keycloak-account-ui/routes";
+import { routes } from './routes';
 
 const router = createBrowserRouter(routes);
 const prI18nInitialized = initI18n();
