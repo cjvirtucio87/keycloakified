@@ -93,53 +93,28 @@ export const Applications = () => {
             isExpanded={application.open}
           >
             <DataListItemRow className="pf-v5-u-align-items-center">
-              <DataListToggle
-                onClick={() => toggleOpen(application.clientId)}
-                isExpanded={application.open}
-                id={`toggle-${application.clientId}`}
-                aria-controls={`content-${application.clientId}`}
-              />
-              <DataListItemCells
-                className="pf-v5-u-align-items-center"
-                dataListCells={[
-                  <DataListCell width={2} key={`client${application.clientId}`}>
-                    {application.effectiveUrl && (
-                      <Button
-                        className="pf-v5-u-pl-0 title-case"
-                        component="a"
-                        variant="link"
-                        onClick={() => window.open(application.effectiveUrl)}
-                      >
-                        {label(
-                          t,
-                          application.clientName || application.clientId,
-                        )}{" "}
-                        <ExternalLinkAltIcon />
-                      </Button>
-                    )}
-                    {!application.effectiveUrl && (
-                      <>
-                        {label(
-                          t,
-                          application.clientName || application.clientId,
-                        )}
-                      </>
-                    )}
-                  </DataListCell>,
-                  <DataListCell
-                    width={2}
-                    key={`internal${application.clientId}`}
-                  >
-                    {application.userConsentRequired
-                      ? t("thirdPartyApp")
-                      : t("internalApp")}
-                    {application.offlineAccess ? ", " + t("offlineAccess") : ""}
-                  </DataListCell>,
-                  <DataListCell width={2} key={`status${application.clientId}`}>
-                    {application.inUse ? t("inUse") : t("notInUse")}
-                  </DataListCell>,
-                ]}
-              />
+	    {application.effectiveUrl && (
+	      <Button
+		className="pf-v5-u-pl-0 title-case"
+		component="a"
+		variant="link"
+		onClick={() => window.open(application.effectiveUrl)}
+	      >
+		{label(
+		  t,
+		  application.clientName || application.clientId,
+		)}{" "}
+		<ExternalLinkAltIcon />
+	      </Button>
+	    )}
+	    {!application.effectiveUrl && (
+	      <>
+		{label(
+		  t,
+		  application.clientName || application.clientId,
+		)}
+	      </>
+	    )}
             </DataListItemRow>
 
             <DataListContent
