@@ -46,7 +46,11 @@ div.pf-v5-c-masthead__content > div.pf-v5-c-toolbar {
   background-color: #8b6556;
 }
 
-header.pf-v5-c-masthead.pf-m-display-inline {
+header.pf-v5-c-masthead {
+  background-color: #8b6556;
+}
+
+header.pf-v5-c-masthead > span.pf-v5-c-masthead__toggle {
   background-color: #8b6556;
 }
 
