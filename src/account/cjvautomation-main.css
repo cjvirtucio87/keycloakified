@@ -1,0 +1,62 @@
+div#page-sidebar > div.pf-v5-c-page__sidebar-body {
+  background-color: #8b6556;
+}
+
+ul.pf-v5-c-nav__list {
+  background-color: #8b6556;
+}
+
+li.pf-v5-c-nav__item > a.pf-v5-c-nav__link {
+  background-color: #8b6556;
+}
+
+li.pf-v5-c-nav__item > a.pf-v5-c-nav__link:hover {
+  background-color: pink;
+}
+
+li.pf-v5-c-nav__item > a.pf-v5-c-nav__link.pf-m-current {
+  background-color: #8b6556;
+}
+
+li.pf-v5-c-nav__item > a.pf-v5-c-nav__link.pf-m-current:hover {
+  background-color: pink;
+}
+
+li.pf-v5-c-nav__item > button.pf-v5-c-nav__link {
+  background-color: #8b6556;
+}
+
+li.pf-v5-c-nav__item > button.pf-v5-c-nav__link:hover {
+  background-color: pink;
+}
+
+li.pf-v5-c-nav__item.pf-m-expandable.pf-m-expanded {
+  background-color: #8b6556;
+}
+
+li.pf-v5-c-nav__item.pf-m-expandable.pf-m-expanded > button.pf-v5-c-nav__link {
+  background-color: #8b6556;
+}
+
+li.pf-v5-c-nav__item.pf-m-expandable.pf-m-expanded > button.pf-v5-c-nav__link:hover {
+  background-color: pink;
+}
+
+div.pf-v5-c-masthead__content > div.pf-v5-c-toolbar {
+  background-color: #8b6556;
+}
+
+header.pf-v5-c-masthead.pf-m-display-inline {
+  background-color: #8b6556;
+}
+
+a.pf-v5-c-masthead__brand > img._brand_1gmge_1 {
+  display: none;
+}
+
+div.pf-v5-c-toolbar__item > button.pf-v5-c-menu-toggle {
+  --pf-v5-c-menu-toggle--before--BorderTopColor: #8b6556;
+  --pf-v5-c-menu-toggle--before--BorderLeftColor: #8b6556;
+  --pf-v5-c-menu-toggle--before--BorderRightColor: #8b6556;
+  --pf-v5-c-menu-toggle--before--BorderBottomColor: #8b6556;
+}
